@@ -22,6 +22,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Alt+CapsLock to toggle CapsLock
 ; !CapsLock::CapsLock
+
+; Win+CapsLock to sleep PC
+; #CapsLock::DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
 ; -------------------------------------------
 
 ; Rebinds CapsLock to Ctrl
